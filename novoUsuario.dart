@@ -10,13 +10,13 @@ import '/custom_code/actions/index.dart'; // ← Importa chamaEndPoint!
 
 // A função abaixo permite que um endpoint seja executado. Para tanto,
 // é preciso garantir que os parâmetros de entrada sejam fornecidos, tais como
-// nome, descrição, etc, com os tipos corretos dos dados.
+// nome, email, etc, com os tipos corretos dos dados.
 //
 // Os dados e seus tipos definidos no parâmetro da função devem ser
 // especificados no menu lateral à direita, na área "Define Arguments".
 //
 // Importante: O nome da função deve ser igual ao nome do Custom Action.
-// Neste exemplo, o nome do Custom Action é novoProduto.
+// Neste exemplo, o nome do Custom Action é novoUsuario.
 Future<bool> novoUsuario(
   String nome,
   String email,
@@ -31,4 +31,5 @@ Future<bool> novoUsuario(
   bool sucesso = await chamaEndPoint(url, 'POST', body);
 
   return sucesso;
+
 }
