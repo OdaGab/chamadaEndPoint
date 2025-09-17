@@ -22,6 +22,7 @@ Future<bool> novoUsuario(
   String email,
   String password,
 ) async {
+  //a url é o Endpoit gerado no Xano lembrese de troca-lo.  
   final url = 'https://x8ki-letl-twmt.n7.xano.io/api:UekUIwne/auth/signup';
 
   // 🧩 Monta o body do JSON
@@ -33,3 +34,4 @@ Future<bool> novoUsuario(
   return sucesso;
 
 }
+
